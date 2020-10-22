@@ -1,0 +1,20 @@
+compat: v0
+id: supersecretmessage
+version: 0.2.0
+os-version-required: ">=0.2.4"
+os-version-recommended: ">=0.2.4"
+title: "sup3rS3cretMes5age"
+description:
+  short: "A simple, secure self-destructing message service"
+  long: |
+    sup3rS3cretMes5age is a place to securely store text such as passwords, secrets, API keys, etc, as well as any type of file that needs to be accessible to the first person to click the link, the first time they click it, and never again. See https://blog.algolia.com/secure-tool-for-one-time-self-destructing-messages/ for more details.
+release-notes: https://github.com/algolia/sup3rS3cretMes5age/releases/tag/0.2.0
+ports:
+  - internal: 80
+    tor: 80
+image:
+  type: tar
+mount: /root
+has-instructions: false
+assets: []
+hidden-service-version: v3
