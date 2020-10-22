@@ -1,4 +1,4 @@
-# Wrapper for Mkaczanowski Pastebin
+# Wrapper for sup3rS3cretMes5age
 
 ## Dependencies
 
@@ -11,8 +11,8 @@
 
 ## Cloning
 ```
-git clone git@github.com:chrisguida/mkaczanowski-pastebin-wrapper.git
-cd mkaczanowski-pastebin-wrapper
+git clone git@github.com:chrisguida/sup3rS3cretMes5age-wrapper.git
+cd sup3rS3cretMes5age-wrapper
 git submodule update --init
 ```
 
@@ -24,5 +24,5 @@ make
 
 ## Installing (on Embassy)
 ```
-sudo appmgr install mkaczanowski-pastebin.s9pk
+sudo appmgr install supersecretmessage.s9pk
 ```
