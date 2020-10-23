@@ -12,7 +12,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build  -o sup3rS3cretMes5age .
 RUN go run /usr/local/go/src/crypto/tls/generate_cert.go --host localhost
 
 #FROM alpine:latest
-FROM arm32v7/alpine:latest as vault-builder
+FROM arm32v7/alpine:latest as runner
 
 # This is the release of Vault to pull in.
 ARG VAULT_VERSION=1.5.4
@@ -98,7 +98,7 @@ CMD ["server", "-dev"]
 #FROM alpine:latest
 #FROM arm32v7/alpine:latest AS runner
 
-EXPOSE 1234
+#EXPOSE 1234
 
 ENV \
     VAULT_ADDR='http://0.0.0.0:8200' \

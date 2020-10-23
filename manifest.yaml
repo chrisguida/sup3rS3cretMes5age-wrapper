@@ -12,6 +12,8 @@ release-notes: https://github.com/algolia/sup3rS3cretMes5age/releases/tag/0.2.0
 ports:
   - internal: 80
     tor: 80
+  - internal: 443
+    tor: 443
 image:
   type: tar
 mount: /root
