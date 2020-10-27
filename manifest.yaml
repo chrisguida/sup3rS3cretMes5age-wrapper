@@ -16,7 +16,7 @@ ports:
     tor: 443
 image:
   type: tar
-mount: /root
+mount: /vault
 has-instructions: false
 assets: []
 hidden-service-version: v3

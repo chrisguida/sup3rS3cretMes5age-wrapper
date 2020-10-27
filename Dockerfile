@@ -72,11 +72,11 @@ RUN mkdir -p /vault/logs && \
 
 # Expose the logs directory as a volume since there's potentially long-running
 # state in there
-VOLUME /vault/logs
+#VOLUME /vault/logs
 
 # Expose the file directory as a volume since there's potentially long-running
 # state in there
-VOLUME /vault/file
+#VOLUME /vault/file
 
 # 8200/tcp is the primary interface that applications use to interact with
 # Vault.

@@ -9,6 +9,9 @@ set -e
 # Prevent core dumps
 ulimit -c 0
 
+#mkdir -p /vault/logs
+#mkdir -p /vault/config
+
 # Allow setting VAULT_REDIRECT_ADDR and VAULT_CLUSTER_ADDR using an interface
 # name instead of an IP address. The interface name is specified using
 # VAULT_REDIRECT_INTERFACE and VAULT_CLUSTER_INTERFACE environment variables. If
@@ -100,5 +103,6 @@ if [ "$1" = 'vault' ]; then
       set -- su-exec vault "$@"
     fi
 fi
+
 ./sup3rS3cretMes5age &
 exec "$@"
